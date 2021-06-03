@@ -46,7 +46,7 @@ public class CurriculumVitae {
 	@Column(name="create_date", nullable = false)
 	@NotNull
 	@PastOrPresent
-	private LocalDate createDate;
+	private LocalDate createDate = LocalDate.now();
 	
 	
 	@JsonIgnore
@@ -66,5 +66,8 @@ public class CurriculumVitae {
 	private List<TechnologyKnowledge> technologyKnowledges;
 	
 	
+	public void setCreateDate(LocalDate createDate) {
+		this.createDate = LocalDate.now();
+	}
 	
 }

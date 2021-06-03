@@ -18,7 +18,8 @@ public class CloudinaryUpload {
 		try {
 			@SuppressWarnings("rawtypes")
 			Map params = ObjectUtils.asMap(
-				    "public_id", "cv/photos/"+ file.hashCode(),
+					"folder", "cv/photos/",
+				    "public_id", null,
 				    "overwrite", true,
 				    "notification_url", null,
 				    "resource_type", "image"         
