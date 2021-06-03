@@ -3,8 +3,6 @@ package com.kodlamaio.hrmsDemo5.business.concretes;
 import java.io.File;
 import java.util.List;
 
-import javax.validation.Valid;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
