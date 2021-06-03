@@ -12,7 +12,7 @@ public class CloudinaryUpload {
 	@SuppressWarnings("unchecked")
 	public Map<String, Object> upload(File file) {
 		Cloudinary cloudinary = new Cloudinary(ObjectUtils.asMap(
-				"cloud_name", "Your cloud_name code",
+				"cloud_name", "Your cloud_name",
 				"api_key", "Your api_key code",
 				"api_secret", "Your api_secret code"));
 		try {
